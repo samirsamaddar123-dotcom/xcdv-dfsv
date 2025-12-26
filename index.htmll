@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Sneha ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at top, #ffe6eb, #f8b6c8);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /* Floral background pattern */
+    body::before {
+        content: "🌸 🌺 🌼 🌷";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 60px;
+        opacity: 0.08;
+        white-space: nowrap;
+        animation: floralMove 30s linear infinite;
+    }
+
+    @keyframes floralMove {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+
+    .card {
+        background: white;
+        margin: 80px auto;
+        padding: 40px;
+        max-width: 720px;
+        border-radius: 25px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        color: #a4003a;
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 20px;
+        color: #5a1031;
+        line-height: 1.7;
+    }
+
+    /* Animated roses */
+    .roses {
+        font-size: 45px;
+        margin: 20px 0;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    /* Floating petals */
+    .petal {
+        position: absolute;
+        font-size: 30px;
+        animation: fall linear infinite;
+        opacity: 0.8;
+    }
+
+    @keyframes fall {
+        from {
+            transform: translateY(-10vh) rotate(0deg);
+        }
+        to {
+            transform: translateY(110vh) rotate(360deg);
+        }
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #7a0030;
+    }
+
+    audio {
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Floating petals -->
+<span class="petal" style="left:10%; animation-duration:12s;">🌸</span>
+<span class="petal" style="left:25%; animation-duration:15s;">🌹</span>
+<span class="petal" style="left:40%; animation-duration:10s;">🌺</span>
+<span class="petal" style="left:60%; animation-duration:18s;">🌷</span>
+<span class="petal" style="left:75%; animation-duration:14s;">🌸</span>
+<span class="petal" style="left:90%; animation-duration:16s;">🌹</span>
+
+<div class="card">
+    <h1>❤️ Dear Sneha ❤️</h1>
+
+    <div class="roses">
+        🌹🌹🌹🌹🌹
+    </div>
+
+    <p>
+        My love, I know you are not feeling well right now 🤍  
+        I wish I could take away your pain.
+    </p>
+
+    <p>
+        You are my whole world 🌍✨  
+        My happiness, my strength, my everything.
+    </p>
+
+    <p>
+        In every bad situation, every painful moment,  
+        <strong>I am always with you</strong> 🤝💖
+    </p>
+
+    <p>
+        Please rest well, take care of yourself,  
+        and feel my love surrounding you 🌸
+    </p>
+
+    <div class="roses">
+        💕💞💗💘
+    </div>
+
+    <p class="footer">
+        Always yours,<br>
+        Suvam 💌
+    </p>
+
+    <!-- Background music -->
+    <p style="font-size:16px;">🎶 Tap play if music doesn’t start automatically</p>
+    <audio controls autoplay loop>
+        <!-- Replace music.mp3 with your own romantic/soft music file -->
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+</div>
+
+</body>
+</html>
